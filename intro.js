@@ -2,8 +2,7 @@ pow();
 
 function pow(base, exponent) {
   if (exponent > 0 || exponent == 1) {
-    return Math.pow(base, exponent);
-  } else {
+    return base(base * exponent - 1);
   }
 }
 
@@ -16,5 +15,3 @@ function bracketWrapper(count) {
     console.log("}");
   }
 }
-
-console.log("object :>> ");
