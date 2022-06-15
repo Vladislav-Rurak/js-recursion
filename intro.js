@@ -1,17 +1,22 @@
+pow();
+
 function pow(base, exponent) {
-  if (exponent == 1) {
-    return base;
+  if (exponent > 0 || exponent == 1) {
+    return Math.pow(base, exponent);
+    // return base * exponent;
   } else {
-    return (
-      base * pow(base, exponent - 1)
-    );
+    alert("Ты пидор");
   }
 }
 
+bracketWrapper();
+
 function bracketWrapper(count) {
-  console.log("{");
   if (count >= 1) {
+    console.log("{");
     bracketWrapper(count - 1);
+    console.log("}");
   }
-  console.log("}");
 }
+
+console.log("object :>> ");
