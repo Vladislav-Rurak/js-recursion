@@ -3,9 +3,7 @@ pow();
 function pow(base, exponent) {
   if (exponent > 0 || exponent == 1) {
     return Math.pow(base, exponent);
-    // return base * exponent;
   } else {
-    alert("Ты пидор");
   }
 }
 
