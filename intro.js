@@ -2,7 +2,7 @@ pow();
 
 function pow(base, exponent) {
   if (exponent > 0 || exponent == 1) {
-    return base(base * exponent - 1);
+    return base(base, exponent - 1);
   }
 }
 
